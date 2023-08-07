@@ -38,7 +38,7 @@ export class UserResolver {
     @Args('userFindManyArgs') userFindManyArgs: UserFindManyArgs,
     @Info() info: any,
   ) {
-    // userFindManyArgs.select = new PrismaSelect(info).value.select;
+    // userFindManyArgs.select = new PrismaSelect(info).value.select; /
     return this.userService.findMany(userFindManyArgs);
   }
 
